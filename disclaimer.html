@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disclaimer • College Geek</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+
+  <body>
+    <div id="nav"></div>
+
+    <section class="page-hero">
+      <div class="page-hero__inner">
+        <h1>Disclaimer</h1>
+        <p>Important information about the use of this website.</p>
+        <div class="hero-actions">
+          <a class="btn-outline" href="index.html" style="text-decoration: none">← Back to Home</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="padding: 18px 5% 70px">
+      <div class="predictor-card policy-card">
+        <div class="policy-meta">Last Updated: [Date]</div>
+
+        <h2>Disclaimer</h2>
+
+        <p>
+          The information provided on <b>College Geek</b> is for general educational and informational purposes only. We
+          strive to keep all information accurate and updated; however, we do not guarantee the completeness, reliability,
+          or accuracy of any information published on this website.
+        </p>
+
+        <p>
+          <b>College Geek</b> is an independent educational information portal and is not affiliated with, associated with,
+          endorsed by, or officially connected to any government organization, examination authority, counselling board,
+          university, or educational institution unless explicitly mentioned.
+        </p>
+
+        <p>
+          The content published on this website may include information regarding entrance examinations, admissions,
+          counselling procedures, eligibility criteria, important dates, colleges, courses, results, cutoffs, and
+          educational opportunities. Such information may change from time to time based on official notifications.
+        </p>
+
+        <p>
+          Visitors are strongly advised to verify all information through the respective official websites before making
+          any admission, counselling, or educational decisions.
+        </p>
+
+        <p>
+          Any action taken based on the information available on this website is strictly at the user's own risk.
+          <b>College Geek</b> shall not be liable for any losses, damages, admission-related decisions, or consequences
+          resulting from the use of this website.
+        </p>
+
+        <p>
+          This website may contain links to third-party websites for reference purposes. We do not control or endorse the
+          content, services, or policies of such websites.
+        </p>
+
+        <p>By using this website, you agree to this disclaimer and its terms.</p>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="./shared.js"></script>
+    <script>
+      document.getElementById("nav").innerHTML = window.CG.renderNav("disclaimer");
+      document.getElementById("footer").innerHTML = window.CG.renderFooter();
+    </script>
+  </body>
+</html>

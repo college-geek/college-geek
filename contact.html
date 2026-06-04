@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us • College Geek</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+
+  <body>
+    <div id="nav"></div>
+
+    <section class="page-hero">
+      <div class="page-hero__inner">
+        <h1>Contact Us</h1>
+        <p>Support, feedback, corrections, and partnership inquiries.</p>
+        <div class="hero-actions">
+          <a class="btn-outline" href="index.html" style="text-decoration: none">← Back to Home</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="padding: 18px 5% 70px">
+      <div class="predictor-card policy-card">
+        <h2>Support</h2>
+        <p>
+          We would love to hear from you. If you have any questions, feedback, correction requests, or partnership
+          inquiries, please use the contact form below. We typically respond within 24–72 hours.
+        </p>
+
+        <div class="cg-form-wrap" aria-label="Support contact form">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfDClLH9CkWMXva1XG5g51KSoWoBO8Ta1BQO5oi5zWMseyVFA/viewform?embedded=true"
+            width="640"
+            height="1027"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="College Geek Support Form"
+          >
+            Loading…
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="./shared.js"></script>
+    <script>
+      document.getElementById("nav").innerHTML = window.CG.renderNav("contact");
+      document.getElementById("footer").innerHTML = window.CG.renderFooter();
+    </script>
+
+    <style>
+      /* Contact form embed */
+      .cg-form-wrap {
+        margin-top: 14px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        overflow: hidden;
+        background: white;
+      }
+      .cg-form-wrap iframe {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        border: 0;
+      }
+    </style>
+  </body>
+</html>

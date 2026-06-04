@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Geek – From Counselling to Campus Success</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+
+  <body>
+    <div id="nav"></div>
+
+    <!-- Announcement banner (inserted between Navbar and Hero) -->
+    <div class="announce" role="status" aria-label="Counselling announcement">
+      <div class="announce__inner">
+        <span class="announce__dot" aria-hidden="true"></span>
+        <div class="announce__text">
+          <span class="announce__label">COUNSELLING COMING SOON:</span>
+          <span class="announce__exams">
+            <strong class="announce__exam">BCECE</strong>
+            &nbsp;•&nbsp;
+            <strong class="announce__exam">BCECE [LE]</strong>
+            &nbsp;•&nbsp;
+            <strong class="announce__exam">DCECE [PE/PMM/PM]</strong>
+          </span>
+        </div>
+        <span class="announce__spacer" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-badge"><span></span> Bihar's #1 College Platform</div>
+        <h1>From Counselling<br />to <span>Campus Success</span></h1>
+        <p>
+          The complete platform for Bihar students to discover colleges, navigate UGEAC counseling, compare branches, and
+          succeed throughout their college journey.
+        </p>
+        <div class="hero-btns">
+          <a class="btn-primary" href="predictor.html" style="text-decoration:none">🔮 Predict My College</a>
+          <a class="btn-outline" href="colleges.html" style="text-decoration:none">🏛️ Explore Colleges</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <img
+          src="bihar-map.png"
+          alt="Bihar map"
+          style="width: 680px; max-width: 100%; height: auto; border-radius: 24px"
+        />
+      </div>
+    </section>
+
+    <!-- FEATURES (kept from your template) -->
+    <section class="section">
+      <div class="features-grid">
+        <div class="feature-card" onclick="location.href='predictor.html'">
+          <div class="feature-icon">🔮</div>
+          <h3>1. College Predictor</h3>
+          <p>AI-powered predictions based on your rank, category &amp; preferences.</p>
+          <ul class="feature-checks">
+            <li><span class="check">✓</span> Accurate college predictions</li>
+            <li><span class="check">✓</span> Branch-wise cutoffs</li>
+            <li><span class="check">✓</span> Personalized recommendations</li>
+          </ul>
+          <div class="feature-link"><div class="arrow-btn">→</div></div>
+        </div>
+        <div class="feature-card" onclick="location.href='colleges.html'">
+          <div class="feature-icon" style="background:var(--purple-light)">🏛️</div>
+          <h3>2. College Explorer</h3>
+          <p>Explore Bihar colleges with detailed information &amp; cutoffs.</p>
+          <ul class="feature-checks">
+            <li><span class="check">✓</span> Fees &amp; hostel details</li>
+            <li><span class="check">✓</span> Branch-wise cutoffs</li>
+            <li><span class="check">✓</span> Map &amp; contact links</li>
+          </ul>
+          <div class="feature-link"><div class="arrow-btn">→</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP COLLEGES (restored) -->
+    <section class="section" style="padding-top: 0">
+      <div class="section-header">
+        <h2 class="section-title">Bihar Colleges</h2>
+        <a href="colleges.html" class="view-all">View All Colleges →</a>
+      </div>
+      <div class="colleges-grid" id="top-colleges-grid"></div>
+    </section>
+
+    <!-- ROADMAP (restored) -->
+    <section class="section roadmap-section" id="counselling">
+      <h2 class="section-title">UGEAC Counselling Roadmap</h2>
+      <p class="roadmap-subtitle">Your step-by-step guide to secure admission</p>
+      <div class="roadmap-steps">
+        <div class="roadmap-step">
+          <div class="step-number">1</div>
+          <div class="step-icon">👤</div>
+          <div class="step-title">Registration</div>
+          <div class="step-desc">Complete your registration on the UGEAC portal with required documents.</div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="roadmap-step">
+          <div class="step-number">2</div>
+          <div class="step-icon">📋</div>
+          <div class="step-title">Choice Filling</div>
+          <div class="step-desc">Fill your preferred colleges and branches in order of your choice.</div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="roadmap-step">
+          <div class="step-number">3</div>
+          <div class="step-icon">🎯</div>
+          <div class="step-title">Seat Allotment</div>
+          <div class="step-desc">Seats are allotted based on your rank, category &amp; preferences.</div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="roadmap-step">
+          <div class="step-number">4</div>
+          <div class="step-icon">✅</div>
+          <div class="step-title">Admission</div>
+          <div class="step-desc">Confirm your admission by reporting to the allotted college.</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CTA (restored) -->
+    <section class="cta-section">
+      <div class="cta-left">
+        <h2>Ready for<br />UGEAC 2026?</h2>
+        <p>Join thousands of Bihar students who are already ahead in their college journey.</p>
+        <a class="btn-white" href="predictor.html" style="text-decoration:none">Start Free →</a>
+        <div class="cta-trust">
+          <span class="trust-item">✅ 100% Free</span>
+          <span class="trust-item">💳 No Credit Card</span>
+          <span class="trust-item">⚡ Instant Access</span>
+        </div>
+      </div>
+      <div class="cta-cards">
+        <div class="cta-card" onclick="location.href='predictor.html'">
+          <div class="cta-card-icon">📊</div>
+          <div class="cta-card-text">
+            <strong>Predict Your College</strong>
+            <span>Based on your rank</span>
+          </div>
+        </div>
+        <div class="cta-card" onclick="location.href='colleges.html'">
+          <div class="cta-card-icon">⚖️</div>
+          <div class="cta-card-text">
+            <strong>Explore Colleges</strong>
+            <span>Fees, hostel &amp; cutoffs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="./data.js"></script>
+    <script src="./data-extra.js"></script>
+    <script src="./shared.js"></script>
+    <script>
+      document.getElementById("nav").innerHTML = window.CG.renderNav("home");
+      document.getElementById("footer").innerHTML = window.CG.renderFooter();
+
+      // Render "Bihar Colleges" using the same card structure as colleges page
+      (() => {
+        const { DATA, fmt, fmtR, getTier, escapeHtml, applyCollegeLogoOverlay, applyCollegePhotoBackground } = window.CG;
+        const { INFO, META, CUT_IDX } = DATA;
+
+        const grid = document.getElementById("top-colleges-grid");
+        if (!grid) return;
+
+        const mode = "ugeac";
+        const cat = "UR";
+
+        const slugify = (name) =>
+          String(name || "")
+            .toLowerCase()
+            .replace(/&/g, " and ")
+            .replace(/\./g, "")
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-+|-+$/g, "")
+            .replace(/-+/g, "-");
+
+        const EXCLUDED_COLLEGES = new Set([
+          "S.G.I.D.T. PATNA",
+          "CIPET:IPT, BIHTA, PATNA",
+          "DR. APJ ABDUL KALAM WOMENS INST. OF TECH.",
+        ]);
+
+        // Show colleges in the same custom order as the colleges page
+        const top = META.filter((m) => !EXCLUDED_COLLEGES.has(m.name)).slice(0, 4).map((m) => ({
+            ...m,
+            tier: getTier(m.rank),
+            cuts: CUT_IDX[m.name] || [],
+            info: INFO[m.name] || {},
+          }));
+
+        grid.innerHTML = top
+          .map((col) => {
+            const inf = col.info || {};
+            const slug = slugify(col.name);
+
+            const cseBr = col.branches.find(
+              (b) => b.includes("COMPUTER SC.") || b.includes("COMPUTER SCIENCE AND") || b.includes("I.T.")
+            );
+            const bestRow =
+              (cseBr && col.cuts.find((r) => r.b === cseBr && r.c === cat)) || col.cuts.find((r) => r.c === cat);
+            const closeVal = mode === "ugeac" ? bestRow?.uc : bestRow?.jc;
+            const cutoffLabel = closeVal != null ? (mode === "ugeac" ? fmtR(closeVal) : fmt(closeVal)) : null;
+
+            const bg = col.tier === 1 ? "c4" : col.tier === 2 ? "c1" : col.tier === 3 ? "c3" : "c2";
+            // Photo and logo are resolved locally from assets/college-photo and assets/college-logo (by city).
+            const photo = "";
+            const imgCls = `college-img ${bg}`;
+
+            return `
+              <div class="college-card">
+                <div class="${imgCls}" ${photo} data-city="${escapeHtml(inf.city || "")}">
+                  <div class="img-emoji">🏫</div>
+                </div>
+                <div class="college-info">
+                  <h4>${escapeHtml(inf.fullName || col.name)}</h4>
+                  <div class="college-location">📍 ${escapeHtml(inf.city || "")}${inf.city ? ", " : ""}Bihar</div>
+                  <div class="college-stats">
+                    <div class="stat">
+                      <div class="stat-val">${escapeHtml(fmt(col.avg_air))}</div>
+                      <div class="stat-label">Avg JEE AIR (CSE)</div>
+                    </div>
+                    <div class="stat">
+                      <div class="stat-val">${escapeHtml(col.branches.length)}</div>
+                      <div class="stat-label">Branches</div>
+                    </div>
+                  </div>
+                  <div class="college-badges">
+                    ${
+                      cutoffLabel
+                        ? `<div class="cutoff-pill">📌 Cutoff: <b>${escapeHtml(cutoffLabel)}</b> <span class="cutoff-pill__meta">(${escapeHtml(
+                            cat
+                          )} · ${escapeHtml(mode === "ugeac" ? "UGEAC" : "JEE")})</span></div>`
+                        : ""
+                    }
+                  </div>
+                  <a class="btn-view" href="./colleges/${escapeHtml(slug)}.html?mode=${escapeHtml(mode)}">View Details →</a>
+                </div>
+              </div>
+            `;
+          })
+          .join("");
+
+        // Apply local city photos + logos on featured cards
+        grid.querySelectorAll(".college-img[data-city]").forEach((el) => {
+          const city = el.getAttribute("data-city") || "";
+          if (!city) return;
+          if (typeof applyCollegePhotoBackground === "function") applyCollegePhotoBackground(el, city);
+          if (typeof applyCollegeLogoOverlay === "function") applyCollegeLogoOverlay(el, city);
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cutoff Trends • College Geek</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+
+  <body>
+    <div id="nav"></div>
+
+    <section class="page-hero">
+      <div class="page-hero__inner">
+        <h1>Cutoff Trends</h1>
+        <p>
+          Compare branch-wise closing ranks across colleges, or open a specific college to see category-wise opening/closing
+          cutoffs for a branch.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-outline" href="colleges.html" style="text-decoration: none">🏛️ Explore Colleges</a>
+          <a class="btn-outline" href="predictor.html" style="text-decoration: none">🔮 College Predictor</a>
+          <a class="btn-outline" href="index.html" style="text-decoration: none">← Back to Home</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="padding: 18px 5% 70px">
+      <div class="predictor-card">
+        <div class="predictor-grid" style="grid-template-columns: 1fr 1fr 1fr">
+          <div class="field">
+            <label>Mode</label>
+            <div class="seg">
+              <button id="tm-ugeac" class="active" type="button">UGEAC</button>
+              <button id="tm-jee" type="button">JEE AIR</button>
+            </div>
+          </div>
+          <div class="field">
+            <label>College</label>
+            <select id="tcollege" class="select"></select>
+          </div>
+          <div class="field">
+            <label>Branch</label>
+            <select id="tbranch" class="select"></select>
+          </div>
+        </div>
+
+        <div class="predictor-grid" style="grid-template-columns: 1fr 2fr; margin-top: 12px">
+          <div class="field">
+            <label>Category</label>
+            <select id="tcat" class="select"></select>
+          </div>
+          <div style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; align-self: end">
+            Tip: choose a <b>College</b> to see its category table, or keep it as <b>All colleges</b> to compare.
+          </div>
+        </div>
+      </div>
+
+      <div id="summary" style="margin-top: 18px"></div>
+      <div id="out"></div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="./data.js"></script>
+    <script src="./data-extra.js"></script>
+    <script src="./shared.js"></script>
+    <script src="./cutoff-trends.js"></script>
+  </body>
+</html>
